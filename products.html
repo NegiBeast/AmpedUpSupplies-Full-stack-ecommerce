@@ -1,0 +1,2463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AmpedUp Supplies</title>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Caveat&family=Noto+Serif+Vithkuqi:wght@500&family=Pacifico&family=Sacramento&family=Saira+Condensed&family=Sarpanch&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script> 
+        <script src="uikit/dist/js/uikit-icons.min.js"></script>  
+        <script>          
+          function toggleBackToTop() {
+            const backToTopContainer = document.getElementById('backToTopContainer');
+            if (window.scrollY > 400) {
+              backToTopContainer.style.display = 'block';
+            } else {
+              backToTopContainer.style.display = 'none';
+            }
+          }
+      
+          window.addEventListener('scroll', toggleBackToTop);
+          document.addEventListener('DOMContentLoaded', toggleBackToTop);
+        </script>
+
+
+        <style>  
+          .text-gray-600 a{
+            text-decoration: none;
+            color: inherit;
+          } 
+          
+          .heading-top{
+            background-color:#096192;
+            color:whitesmoke
+          }
+
+          .text-gray-600 h2{
+            font-family: 'Noto Serif Vithkuqi', serif;
+            color: darkslategrey;
+          }
+
+          .receiver-icon{
+            display: block;
+            margin-left: 5px;
+          }
+
+          .comp-logo{
+            height: auto;
+            width: 150px;            
+          }
+          .customer-support-nav{
+            font-family: 'Noto Serif Vithkuqi', serif;
+          }
+          .mr-5{
+            font-family: 'Noto Serif Vithkuqi', serif;          
+          }
+          .Categories-heading{
+            font-family: 'Noto Serif Vithkuqi', serif;          
+          }
+          
+          .uk-card-small{
+            margin-bottom: auto;
+          }
+
+          .uk-card{
+            margin: auto;
+          }  
+          
+          .uk-heading-active{
+            font-size: large;
+            font-weight: 500;            
+          }
+
+          .sliding-menu{
+            background: #1399c6;
+          }
+
+          .uk-heading-medium{
+            margin-top: 1%;
+            margin-bottom: 0%;
+            font-family: 'Dancing Script', cursive;
+          }
+
+   
+          .list-none{
+            line-height: 35px;
+          }
+
+          #contact-heading{
+            font-family: 'Times New Roman';
+            text-align: center;          
+          }
+
+        </style>     
+    </head>
+
+    <body> 
+
+      <header class="text-gray-600 body-font uk-card uk-card-default heading-top" uk-sticky>            
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href="index.html">
+            <img class="comp-logo" src="./images/companylogo-bgremoved.png"/>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" style="padding-right: 7%;">                                
+            <a class="mr-5 hover:text-gray-900">Browse<span uk-drop-parent-icon></span></a>
+            <div uk-dropdown="animation: uk-animation-slide-top-small; animate-out: true">
+              <ul class="uk-nav uk-dropdown-nav">    
+                  <li class="uk-nav-header"><a href="./products.html">ALL PRODUCTS</a></li>                  
+                  <li><a href="inverter.html">Inverter</a></li>
+                  <li><a href="battery.html">Battery</a></li>
+                  <li><a href="#accessories-section" uk-scroll>Accessories</a></li>
+                  <li class="uk-nav-header">Special Combos</li>
+                  <li><a href="#combo-section" uk-scroll>Inverter and Battery Combo</a></li>                      
+              </ul>
+            </div>
+            <a class="mr-5 hover:text-gray-900">Products<span uk-drop-parent-icon></span></a>                
+              <div class="uk-width-large" uk-dropdown>
+                  <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+                      <div>
+                          <ul class="uk-nav uk-dropdown-nav">
+                              <li class="uk-heading-active"><a href="inverter.html" class="uk-text-emphasis">Inverter and UPS</a></li>
+                              <li><a href="#eco-watt-neo-inverter" uk-scroll>Eco Watt NEO</a></li>
+                              <li><a href="#shakti-charge-inverter" uk-scroll>Shakti Charge Inverters</a></li>
+                              <li><a href="#eco-volt-neo-inverter" uk-scroll>Eco Volt NEO</a></li>
+                              <li><a href="#zelio-inverter" uk-scroll>Zelio Series</a></li>
+                              <li><a href="#optimus-inverter" uk-scroll>Optimus Series</a></li>
+                              <li><a href="#power-sine-inverter" uk-scroll>Power Sine 800</a></li>
+                              <li><a href="#zolt-inverter" uk-scroll>Zolt 1100</a></li>
+                              <li class="uk-heading-active"><a href="battery.html" class="uk-text-emphasis">Battery</a></li>
+                              <li><a href="#inverlast-battery" uk-scroll>Inverlast</a></li>
+                              <li><a href="#red-charge-battery" uk-scroll>Red Charge</a></li> 
+                              <li><a href="#power-charge-battery" uk-scroll>Power Charge</a></li> 
+                              <li><a href="#eco-charge-battery" uk-scroll>Eco Charge</a></li> 
+                              <li><a href="#invergel-battery" uk-scroll>InverGel</a></li>  
+                              <li><a href="#ultra-charge-battery" uk-scroll>Utra Charge</a></li>                           
+                          </ul>
+                      </div>
+                      <div>
+                          <ul class="uk-nav uk-dropdown-nav">
+                              <li class="uk-heading-active"><a href="products.html#combo-section" class="uk-text-emphasis">Inverter and Battery Combo</a></li>
+                              <li><a href="#combo-section" uk-scroll>Zelio 1100 with RC 18000 + Trolley</a></li>
+                              <li><a href="#combo-section" uk-scroll>Zolt 1100 with RC 25000 + Trolley</a></li>
+                              <li><a href="#combo-section" uk-scroll>iCruze 11000 with RC 18000</a></li>
+                              <li><a href="#combo-section" uk-scroll>Zolt 1100 with SC 18060</a></li>
+                              <li><a href="#combo-section" uk-scroll>Zelio 1100 with ILTT 26060</a></li>
+                              <li><a href="#combo-section" uk-scroll>Zelio 1100 with LM 18075</a></li>
+                              <li><a href="#combo-section" uk-scroll>+ MORE</a></li>
+                              <li class="uk-heading-active"><a href="products.html#accessories-section" class="uk-text-emphasis">Accessories</a></li>
+                              <li><a href="#accessories-section" uk-scroll>ToughX Trolley TX100L</a></li>
+                              <li><a href="#accessories-section" uk-scroll>ToughX Trolley TX200L</a></li>
+                              <li><a href="#accessories-section" uk-scroll>ToughX Trolley TX100T</a></li>                                  
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+
+            
+              <a class="mr-5 hover:text-gray-900" href="#about-us" uk-scroll>About Us</a>
+              <a class="mr-5 hover:text-gray-900" uk-toggle="target: #modal-close-outside">Installation</a>
+              <div id="modal-close-outside" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Installation</h2><br>
+                    <p style="display: flex; align-items: center;">
+                        For Installation Please Contact us at <a class="receiver-icon" uk-icon="icon: receiver"></a> +91 92111132444                                
+                    </p>
+                    
+                </div>
+            </div>
+          </nav>
+          <a class="receiver-icon" href="#" uk-icon="icon: home" style="padding-right: 8px;"></a>
+          <a class="customer-support-nav" href="index.html">Home</a>
+          
+          
+        </div>
+      </header> 
+
+          <img class="w-full h-full" src="./images/banner-main.png"/>
+
+
+
+
+          <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+            <div class="container px-5 py-24 mx-auto">
+                <h1 class="uk-heading-large uk-heading-line uk-text-center" style="font-family: 'Dancing Script', cursive; color: antiquewhite; padding-bottom: 17%;"><span>Products</span></h1>
+              <div class="-my-8 divide-y-2 divide-gray-800">
+                <a href="#inverters-browsing-section" uk-scroll style="text-decoration: none;">
+                    <div class="py-8 flex flex-wrap md:flex-nowrap" style="padding-top: 2%; display: flex; align-items: center; padding-left: 2%;">
+                        <img src="images/Products/inverter.png" style="height: 170px; margin-left: 4%; margin-right: 0%;">
+                        <h2 class="uk-heading-medium" style="font-family: 'Courier New', Courier, monospace; color: antiquewhite; margin-left: 7%; margin-top: 0;">Inverters And UPS</h2>
+                    </div>
+                </a>
+
+                <a href="#battery-browsing-section" uk-scroll style="text-decoration: none;">
+                <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap" style="text-align: right; padding-top: 2%;">                  
+                  <div class="md:flex-grow">
+                    <img src="images/Products/battery.png" style="float: right; height: 250px; margin-right: 4%;"/>
+                    <h2 class="uk-heading-medium" style="font-family: 'Courier New', Courier, monospace; color: antiquewhite; margin-right: 38%; margin-top: 8%;">Batteries</h2>                    
+                  </div>
+                </div>
+                </a>
+
+                <a href="#combo-section" uk-scroll style="text-decoration: none;">
+                    <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap" style="padding-top: 2%; display: flex; align-items: center;">
+                        <img src="images/Products/combo.png" style="height: 250px; margin-left: 4%; margin-right: 0%;">
+                        <h2 class="uk-heading-medium" style="font-family: 'Courier New', Courier, monospace; color: antiquewhite; margin-left: 2%; margin-top: 0;">Inverter-Battery <br> Combo </h2>
+                    </div>
+                </a>
+                
+
+                <a href="#accessories-section" uk-scroll style="text-decoration: none;">
+                    <div class="py-8 flex border-t-2 border-gray-800 flex-wrap md:flex-nowrap" style="text-align: right; padding-top: 2%; ">                  
+                      <div class="md:flex-grow">
+                        <img src="images/Products/accessories.png" style="float: right; height: 250px; margin-right: 7%;"/>
+                        <h2 class="uk-heading-medium" style="font-family: 'Courier New', Courier, monospace; color: antiquewhite; margin-right: 34%; margin-top: 8%;">Accessories</h2>                    
+                      </div>
+                    </div>
+                </a>
+
+              </div>
+            </div>
+          </section>
+
+          <div class="container mx-auto">
+            <nav aria-label="Breadcrumb" style="padding-top: 2%;">
+              <ul class="uk-breadcrumb">
+                  <li><a href="index.html" class="uk-text-large" style="font-style: italic;">Home</a></li>                                                
+                  <li><span class="uk-text-large" style="font-style: italic;">Products</span></li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- Inverters Browsing Section -->
+          <section id="inverters-browsing-section" class="text-gray-600 body-font">
+            <h1 class="uk-heading-medium uk-heading-line uk-text-center" style="font-family: 'Times New Roman'; font-weight: bolder; padding: 10%; padding-bottom: 3%; padding-top: 3%;"><span>Inverters And UPS</span></h1>            
+            <div class="container px-5 py-24 mx-auto">                            
+              <div class="flex flex-wrap w-full mb-10">                
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <!-- eco watt neo inverter -->
+                  <h1 id="eco-watt-neo-inverter" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"SE4DR>Eco Watt NEO</h1>
+                  <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>            
+              </div>
+              
+            <div class="flex flex-wrap -m-4">    
+              <!-- eco watt neo 700 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">   
+                  <a href="#eco-watt-neo-700" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                    <div class="uk-transition-toggle" tableindex="0">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/Eco watt neo 700.png" alt="content">                                                 
+                    </div>
+                  </a>                                        
+                  <div id="eco-watt-neo-700" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/Eco watt neo 700.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Eco Watt NEO 700</h1>                  
+                                <p class="leading-relaxed">Eco Watt Neo series with Intelligent Square Wave technology  is a best seller from the house of Luminous. It is equipped with advanced microprocessor based design, fast battery charging, user friendly LED indications, battery selection switch for longer battery life and improved performance and many other protection features and alarms. It is suitable for Home, Office and Small commercial applications. </p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹5,900.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>
+                  
+                  <div class="mt-4">                    
+                    <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Eco Watt NEO 700</h2>                    
+                    <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                      <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹5,900.00</h2>
+                      <p class="mt-1">(Inclusive of all taxes)</p>
+                    </div>                  
+                  </div>                                     
+              </div>
+
+              <!-- eco watt neo 1650 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#eco-watt-neo-1650" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/Eco watt neo 1650.png" alt="content">                                                 
+                  </div>
+                </a> 
+                <div id="eco-watt-neo-1650" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/Eco watt neo 1650.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Eco Watt NEO 1650</h1>                  
+                                <p class="leading-relaxed">Eco Watt Neo series is No1 selling Intelligent Square Wave  inverter series of Luminous with advanced microprocessor based design, fast battery charging, user friendly LED indications, , battery selection switch for longer battery life and performance and other protection features and alarms. It is the best in class value for money inverter series for Home, Office and Small commercial applications.</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹10,150.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>               
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Eco Watt NEO 1650</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹10,150.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                
+                </div>                                     
+              </div>  
+
+            </div>
+            </div>
+
+
+            <div class="container px-5 py-24 mx-auto">                            
+              <div class="flex flex-wrap w-full mb-10">                
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <!-- shakti charge inverter -->
+                  <h1 id="shakti-charge-inverter" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Shakti Charge Inverters</h1>
+                  <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>            
+              </div>
+              
+            <div class="flex flex-wrap -m-4">   
+               <!--shakti charge+ 1150  -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                  <a href="#shakti-charge-1150" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                    <div class="uk-transition-toggle" tableindex="0">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/shakti charge 1150.png" alt="content">                                                 
+                    </div>
+                  </a> 
+                  <div id="shakti-charge-1150" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>        
+                        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/shakti charge 1150.png" style="background-color: wheat">
+                                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                  <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                  <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Shakti Charge+ 1150</h1>                  
+                                  <p class="leading-relaxed">Shakti Charge is India's most trusted inverter series for rural and semi–urban areas with in-built heavy-duty charger and LVFC (Low voltage fast battery charging) technology that charges the battery with full charging current even when input voltage is low . It is an ideal choice for areas which experience low voltage conditions and frequent power-cuts. </p>                  
+                                  <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                  <div class="flex">
+                                    <span class="title-font font-medium text-2xl text-white">₹9,150.00</span>
+                                    <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                  </div>
+                                  <p class="mt-1">(Inclusive of all taxes)</p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    </div>              
+                  <div class="mt-4">                    
+                    <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Shakti Charge+ 1150</h2>                    
+                    <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                      <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹9,150.00</h2>
+                      <p class="mt-1">(Inclusive of all taxes)</p>
+                    </div>                  
+                  </div>                                     
+              </div>
+
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">
+                <!-- shakti charge 1450 -->
+                <a href="#shakti-charge-1450" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/shakti charge 1450.png" alt="content">                                                 
+                  </div>
+                </a>  
+                <div id="shakti-charge-1450" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/shakti charge 1450.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Shakti Charge+ 1450</h1>                  
+                                <p class="leading-relaxed">Shakti Charge is India's most trusted inverter series for rural and semi–urban areas with in-built heavy-duty charger and LVFC (Low voltage fast battery charging) technology that charges the battery with full charging current even when input voltage is low . It is an ideal choice for areas which experience low voltage conditions and frequent power-cuts.</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹9,750.00</span>                                  
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                                                      
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>               
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Shakti Charge+ 1450</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹9,750.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                
+                </div>                                     
+              </div>  
+
+            </div>
+            </div>
+
+
+
+            <div class="container px-5 py-24 mx-auto">                            
+              <div class="flex flex-wrap w-full mb-10">                
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <!-- eco volt neo inverter -->
+                  <h1 id="eco-volt-neo-inverter" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Eco Volt Neo</h1>
+                  <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>            
+              </div>
+              
+            <div class="flex flex-wrap -m-4">    
+              <!-- eco volt neo 750 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                  <a href="#eco-volt-neo-750" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                    <div class="uk-transition-toggle" tableindex="0">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/eco volt neo 750.png" alt="content">                                                 
+                    </div>
+                  </a>  
+                  <div id="eco-volt-neo-750" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>        
+                        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/eco volt neo 750.png" style="background-color: wheat">
+                                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                  <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                  <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Eco Volt Neo 750</h1>                  
+                                  <p class="leading-relaxed">Eco Volt Neo series with pure sine wave technology is a best seller from the house of Luminous. It is equipped with advanced microprocessor based design, LVFC (Low voltage fast battery charging) technology , user friendly LED indications, battery selection switch for longer battery life and improved performance and many other protection features and alarms. Low harmonic distortion makes it practically noiseless and pure sine wave technology ensures protection of the connected appliances. </p>                  
+                                  <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                  <div class="flex">
+                                    <span class="title-font font-medium text-2xl text-white">₹7,180.00</span>
+                                    <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                  </div>
+                                  <p class="mt-1">(Inclusive of all taxes)</p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    </div>              
+                  <div class="mt-4">                    
+                    <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Eco Volt Neo 750</h2>                    
+                    <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                      <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹7,180.00</h2>
+                      <p class="mt-1">(Inclusive of all taxes)</p>
+                    </div>                  
+                  </div>                                     
+              </div>
+
+              <!-- eco volt neo 1250 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#eco-volt-neo-1250" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/eco volt neo 1250.png" alt="content">                                                 
+                  </div>
+                </a>   
+                <div id="eco-volt-neo-1250" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/eco volt neo 1250.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Eco Volt Neo 1250</h1>                  
+                                <p class="leading-relaxed">Eco Volt Neo series with pure sine wave technology is a best seller from the house of Luminous. It is equipped with advanced microprocessor based design, LVFC (Low voltage fast battery charging) technology, user friendly LED indications, battery selection switch for longer battery life and improved performance and many other protection features and alarms. Low harmonic distortion makes it practically noiseless and pure sine wave technology ensures protection of the connected appliances. </p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹9,750.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>              
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Eco Volt Neo 1250</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹9,750.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                
+                </div>                                     
+              </div>
+              
+              <!-- eco volt neo 1550 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#eco-volt-neo-1550" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/eco volt neo 1550.png" alt="content">                                                 
+                  </div>
+                </a>                
+                <div id="eco-volt-neo-1550" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/eco volt neo 1550.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Eco Volt Neo 1550</h1>                  
+                                <p class="leading-relaxed">Eco Volt Neo series with pure sine wave technology is a best seller from the house of Luminous. It is equipped with advanced microprocessor based design, LVFC (Low voltage fast battery charging) technology , user friendly LED indications, battery selection switch for longer battery life and improved performance and many other protection features and alarms. Low harmonic distortion makes it practically noiseless and pure sine wave technology ensures protection of the connected appliances. </p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹14,500.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div> 
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Eco Volt Neo 1550</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹14,500.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                
+                </div>                                     
+              </div>
+
+            </div>
+            </div>
+
+
+            <div class="container px-5 py-24 mx-auto">                            
+              <div class="flex flex-wrap w-full mb-10">                
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <!-- zelio inverter -->
+                  <h1 id="zelio-inverter" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Zelio Series</h1>
+                  <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>            
+              </div>
+              
+            <div class="flex flex-wrap -m-4">    
+              <!-- zelio 1100 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                  <a href="#zelio-1100" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                    <div class="uk-transition-toggle" tableindex="0">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/zelio+ 1100.png" alt="content">                                                 
+                    </div>
+                  </a>  
+                  <div id="zelio-1100" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>        
+                        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/zelio+ 1100.png" style="background-color: wheat">
+                                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                  <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                  <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Zelio+ 1100</h1>                  
+                                  <p class="leading-relaxed">Zelio is India’s most intelligent and advanced inverter series equipped with 32-bit DSP processor and informative LCD display with features such as power back-up time display, battery charging time display, fault indicators and much more. It also has MCB protection and Mains by-pass switch which keeps the power supply uninterrupted, even when the inverter develops a fault. </p>                  
+                                  <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                  <div class="flex">
+                                    <span class="title-font font-medium text-2xl text-white">₹10,000.00</span>
+                                    <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                  </div>
+                                  <p class="mt-1">(Inclusive of all taxes)</p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    </div>              
+                  <div class="mt-4">                    
+                    <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Zelio+ 1100</h2>                    
+                    <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                      <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹10,000.00</h2>
+                      <p class="mt-1">(Inclusive of all taxes)</p>
+                    </div>                  
+                  </div>                                     
+              </div>                                        
+
+            </div>
+            </div>
+
+            <div class="container px-5 py-24 mx-auto">                            
+              <div class="flex flex-wrap w-full mb-10">                
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <!-- optimus-inverter -->
+                  <h1 id="optimus-inverter" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Optimus Series</h1>
+                  <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>            
+              </div>
+              
+            <div class="flex flex-wrap -m-4"> 
+                 <!-- optimus 2300 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                  <a href="#optimus-2300" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                    <div class="uk-transition-toggle" tableindex="0">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/optimus 2300+.png" alt="content">                                                 
+                    </div>
+                  </a>                
+                  <div id="optimus-2300" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>        
+                        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/optimus 2300+.png" style="background-color: wheat">
+                                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                  <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                  <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Optimus 2300+</h1>                  
+                                  <p class="leading-relaxed">Optimus series is a micro-controller based, advanced pure sine wave inverter series, equipped with mains by pass switch and battery charging current setting. Its informative LCD display shows eight real time performance statistics, including charging time, back-up time at current load, running load status, fault indications and much more. It offers flexibility to choose between higher backup time and better performance by controlling output voltage. Optimus inverter series is a great choice for your household, commercial and office needs.</p>                  
+                                  <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                  <div class="flex">
+                                    <span class="title-font font-medium text-2xl text-white">₹20,000.00</span>
+                                    <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                  </div>
+                                  <p class="mt-1">(Inclusive of all taxes)</p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    </div> 
+                  <div class="mt-4">                    
+                    <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Optimus 2300+</h2>                    
+                    <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                      <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹20,000.00</h2>
+                      <p class="mt-1">(Inclusive of all taxes)</p>
+                    </div>                  
+                  </div>                                     
+              </div>                                        
+
+            </div>
+            </div>
+
+            <div class="container px-5 py-24 mx-auto">                            
+              <div class="flex flex-wrap w-full mb-10">                
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <!-- power-sine-inverter -->
+                  <h1 id="power-sine-inverter" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Power Sine</h1>
+                  <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>            
+              </div>
+              
+            <div class="flex flex-wrap -m-4">    
+              <!-- power sine 800 -->
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                  <a href="#power-sine-800" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                    <div class="uk-transition-toggle" tableindex="0">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/power sine 800.png" alt="content">                                                 
+                    </div>
+                  </a>   
+                  <div id="power-sine-800" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>        
+                        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/power sine 800.png" style="background-color: wheat">
+                                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                  <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                  <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Power Sine 800</h1>                  
+                                  <p class="leading-relaxed">Power Sine 800 is Pure sine wave inverter series of Luminous with advanced microprocessor based design, LVFC (Low voltage fast battery charging) technology , user friendly LED indications, , battery selection switch for longer battery life and performance and other protection features and alarms. The low harmonic distortion makes it practically noiseless and Pure Sine wave technology ensures protection of the connected appliances.</p>                  
+                                  <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                  <div class="flex">
+                                    <span class="title-font font-medium text-2xl text-white">₹8,590.00</span>
+                                    <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                  </div>
+                                  <p class="mt-1">(Inclusive of all taxes)</p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    </div>              
+                  <div class="mt-4">                    
+                    <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Power Sine 800</h2>                    
+                    <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                      <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹8,590.00</h2>
+                      <p class="mt-1">(Inclusive of all taxes)</p>
+                    </div>                  
+                  </div>                                     
+              </div>                          
+            </div>
+            </div>
+
+            <div class="container px-5 py-24 mx-auto">                            
+              <div class="flex flex-wrap w-full mb-10">               
+                <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                  <!-- zolt-inverter -->
+                  <h1 id="zolt-inverter" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Zolt</h1>
+                  <div class="h-1 w-20 bg-blue-500 rounded"></div>
+                </div>            
+              </div>
+              
+            <div class="flex flex-wrap -m-4">
+              <!-- zolt 1100-->    
+              <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                  <a href="#zolt-1100" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                    <div class="uk-transition-toggle" tableindex="0">
+                      <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/inverter and ups IMG/zolt 1100.png" alt="content">                                                 
+                    </div>
+                  </a>   
+                  <div id="zolt-1100" class="uk-modal-container" uk-modal>
+                    <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>        
+                        <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                            <div class="container px-5 py-24 mx-auto">
+                              <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                                <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/inverter and ups IMG/zolt 1100.png" style="background-color: wheat">
+                                <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                  <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                  <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Zolt 1100</h1>                  
+                                  <p class="leading-relaxed">Zolt series is advanced inverter series with 32 bit DSP processor and informative LCD display with features such as Power back up time display, battery charging time, fault indicators and much more. It is equipped with MCB protection and Mains by pass switch which keeps the power supply uninterrupted in case of a fault in inverter.</p>                  
+                                  <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                  <div class="flex">
+                                    <span class="title-font font-medium text-2xl text-white">₹10,000.00</span>
+                                    <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                  </div>
+                                  <p class="mt-1">(Inclusive of all taxes)</p>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                    </div>
+                    </div>              
+                  <div class="mt-4">                    
+                    <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Zolt 1100</h2>                    
+                    <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                      <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹10,000.00</h2>
+                      <p class="mt-1">(Inclusive of all taxes)</p>
+                    </div>                  
+                  </div>                                     
+              </div>                          
+            </div>
+            </div>
+          </section>  
+
+
+          <div id="about-us" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/lamp.jpg');">
+            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                <h1 style="color: aliceblue; font-family: Georgia;" class="uk-heading-medium" uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;">Who are We?</h1>
+                <p style="color: aliceblue; font-size: x-large; font-family: Georgia;" uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;">We are your authorized Luminous Products seller, bringing you cutting-edge power and energy storage solutions. With a commitment to innovation, quality, and customer satisfaction, we empower lives through reliable and sustainable products. Choose us for an unparalleled experience in power backup and energy efficiency.</p>
+            </div>
+        </div>
+
+
+
+        <!-- Battery Browsing Section -->
+        <section id="battery-browsing-section" class="text-gray-600 body-font">
+          <h1 class="uk-heading-medium uk-heading-line uk-text-center" style="font-family: 'Times New Roman'; font-weight: bolder; padding: 10%; padding-bottom: 3%; padding-top: 3%;"><span>Batteries</span></h1>            
+          <!-- Inverlast Battery -->
+          <div class="container px-5 py-24 mx-auto">                            
+            <div class="flex flex-wrap w-full mb-10">                
+              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 id="inverlast-battery" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Inverlast</h1>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+              </div>            
+            </div>
+            
+          <div class="flex flex-wrap -m-4">    
+            <!-- ilst 10036 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#ilst-10036" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/ilst 10036.png" alt="content">                                                 
+                  </div>
+                </a>  
+                <div id="ilst-10036" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/ilst 10036.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ILST 10036</h1>                  
+                                <p class="leading-relaxed">Warranty: 36* Months <br>
+                                  Capacity: 85 Ah <br>
+                                  This range of Inverlast battery are designed to cope with mild-to-heavy loads for a longer duration. They are provide power for a long duration and are suitable for residential, and commercial purposes.</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹11,100.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>               
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ILST 10036</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹11,100.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>
+
+            <!-- ilst 12042 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#ilst-12042" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/ilst 12042.png" alt="content">                                                 
+                </div>
+              </a>   
+              <div id="ilst-12042" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/ilst 12042.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ILST 12042</h1>                  
+                              <p class="leading-relaxed">Warranty: 42* Months<br>
+                                Capacity: 100 Ah<br>
+                                This range of Inverlast battery are designed to cope with mild -to-heavy loads for a longer duration. They are provide power for a long duration and are suitable for residential, and commercial purposes.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹13,400.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>              
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ILST 12042</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹13,400.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div> 
+            
+            <!-- iltj 18148 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#iltj-18148" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/iltj 18148.png" alt="content">                                                 
+                </div>
+              </a>     
+              <div id="iltj-18148" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/iltj 18148.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ILTJ 18148</h1>                  
+                              <p class="leading-relaxed">48* Months Warranty | Capacity: 150 Ah 
+                                <br>
+                                This STOUT-TUBULAR range of Inverlast batteries are designed to cope with electrical loads of common home appliances for a longer duration. They are suitable for long & frequent power outage and are suitable for residential and commercial purpose.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹19,500.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>            
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ILTJ 18148</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹19,500.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- iltt 18060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#iltt-18060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/iltt 18060.png" alt="content">                                                 
+                </div>
+              </a>      
+              <div id="iltt-18060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/iltt 18060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ILTT 18060</h1>                  
+                              <p class="leading-relaxed">60* Months Warranty | Capacity: 150 Ah 
+                                <br>
+                                Inverlast range of heavy-duty, Tall Tubular batteries are designed to support heavy load of electrical appliances during long & frequent power outages. These batteries contain special grade Lead alloy and are suitable for both HRD & SFC application. These batteries are designed with Orthogonal 3D grid for unmatched electrical performance.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹20,100.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>           
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ILTT 18060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹20,100.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- iltt 24060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#iltt-24060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/iltt 24060.png" alt="content">                                                 
+                </div>
+              </a>    
+              <div id="iltt-24060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/iltt 24060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ILTT 24060</h1>                  
+                              <p class="leading-relaxed">60* Months Warranty | Capacity: 180 Ah 
+                                <br> 
+                                Inverlast range of heavy-duty, Tall Tubular batteries are designed to support heavy load of electrical appliances during long & frequent power outages. These batteries contain special grade Lead alloy and are suitable for both HRD & SFC application. These batteries are designed with Orthogonal 3D grid for unmatched electrical performance.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹24,000.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>             
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ILTT 24060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹24,000.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- iltt 26060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#iltt-26060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/iltt 26060.png" alt="content">                                                 
+                </div>
+              </a>
+              <div id="iltt-26060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/iltt 26060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ILTT 26060</h1>                  
+                              <p class="leading-relaxed">60* Months Warranty | Capacity: 220 Ah 
+                                <br>
+                                Inverlast range of heavy-duty, Tall Tubular batteries are designed to support heavy load of electrical appliances during long & frequent power outages. These batteries contain special grade Lead alloy and are suitable for both HRD & SFC application. These batteries are designed with Orthogonal 3D grid for unmatched electrical performance.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹27,800.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>                 
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ILTT 26060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹27,800.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+          </div>
+          </div>
+
+          <!-- Red Charge Battery -->
+          <div class="container px-5 py-24 mx-auto">                            
+            <div class="flex flex-wrap w-full mb-10">                
+              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 id="red-charge-battery" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Red Charge</h1>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+              </div>            
+            </div>
+            
+            <!-- rc 18000 -->
+          <div class="flex flex-wrap -m-4">    
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#rc-1800" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/rc 18000.png" alt="content">                                                 
+                  </div>
+                </a> 
+                <div id="rc-1800" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/rc 18000.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">RC 18000</h1>                  
+                                <p class="leading-relaxed">Warranty: 36* Months<br>
+                                  Capacity: 150 Ah<br>
+                                  Red Charge TT range of batteries offer worry-free electrical performance during most arduous power-cut scenario, ensuring both HRD capability and SFC capability.  Batteries made in tall tower type container also ensures lowest maintenance during its service life.</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹18,400.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>                
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">RC 18000</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹18,400.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>
+
+            <!-- rc 18000 pro -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#rc-18000-pro" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/rc 18000 pro.png" alt="content">                                                 
+                </div>
+              </a>     
+              <div id="rc-18000-pro" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/rc 18000 pro.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">RC 18000 Pro</h1>                  
+                              <p class="leading-relaxed">48* Months Warranty | Capacity: 150 Ah 
+                                <br>
+                                Red charge TT range of batteries offers worry free electrical performance during most arduous power cut scenario, ensuring both HRD capability & SFC capability.  Batteries made in tall tower type container ensures lowest maintenance during its service life.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹18,900.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>             
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">RC 18000 Pro</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹18,900.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div> 
+            
+            <!-- rc 18000 st -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#rc-18000st" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/rc 18000st.png" alt="content">                                                 
+                </div>
+              </a> 
+              <div id="rc-18000st" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/rc 18000st.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">RC 18000ST</h1>                  
+                              <p class="leading-relaxed">Warranty: 36* Months<br>
+                                Capacity: 150 Ah <br>
+                                Red charge Range of batteries offer Value for Money with longer life and less maintenance. These Tubular Technology batteries comes with fast charging technology and are suitable for areas with frequent power cuts.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹18,200.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>                
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">RC 18000ST</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹18,200.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div> 
+
+            <!-- rc 24000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#rc-24000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/rc 24000.png" alt="content">                                                 
+                </div>
+              </a>     
+              <div id="rc-24000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/rc 24000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">RC 24000</h1>                  
+                              <p class="leading-relaxed">Warranty: 36* Months<br>
+                                Capacity: 180 Ah<br>
+                                Red charge TT range of batteries offers worry-free electrical performance during most arduous power-cut scenario, ensuring both HRD capability & SFC capability. Batteries made in tall tower type container ensures lowest maintenance during its service life.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹21,100.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>            
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">RC 24000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹21,100.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div> 
+
+            <!-- rc 24000 pro -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#rc-24000-pro" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/rc 24000 pro.png" alt="content">                                                 
+                </div>
+              </a>  
+              <div id="rc-24000-pro" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/rc 24000 pro.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">RC 24000 Pro</h1>                  
+                              <p class="leading-relaxed">Warranty: 36* Months<br>
+                                Capacity: 180 Ah<br>
+                                Red charge TT range of batteries offers worry-free electrical performance during most arduous power-cut scenario, ensuring both HRD capability & SFC capability. Batteries made in tall tower type container ensures lowest maintenance during its service life.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹21,100.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>               
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">RC 24000 Pro</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹21,600.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div> 
+
+            <!-- rc 25000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#rc-25000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/rc 25000.png" alt="content">                                                 
+                </div>
+              </a>           
+              <div id="rc-25000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/rc 25000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">RC 25000</h1>                  
+                              <p class="leading-relaxed">36* Months Warranty | Capacity: 200 Ah 
+                                <br>
+                                Red charge TT range of batteries offers worry free electrical performance during most arduous power cut scenario, ensuring both HRD capability & SFC capability.  Batteries made in tall tower type container ensures lowest maintenance during its service life.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹22,900.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>      
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">RC 25000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹22,900.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div> 
+
+          </div>
+          </div>
+
+
+          <!-- Power Charge Battery -->
+          <div class="container px-5 py-24 mx-auto">                            
+            <div class="flex flex-wrap w-full mb-10">                
+              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 id="power-charge-battery" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Power Charge</h1>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+              </div>            
+            </div>
+            
+          <div class="flex flex-wrap -m-4">   
+             <!--pc 18042tj  -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#pc-18042tj" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/pc 18042tj.png" alt="content">                                                 
+                  </div>
+                </a>    
+                <div id="pc-18042tj" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/pc 18042tj.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">PC 18042TJ</h1>                  
+                                <p class="leading-relaxed">42* Months Warranty | Capacity: 150 Ah 
+                                  <br>
+                                  Power charge batteries are designed for Rural and Semi-urban areas as they offer Value for money with longer life and less maintenance. Batteries specifically designed in stout Jumbo container ensures best performance during frequent & long power cuts.</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹18,800.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>             
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">PC 18042TJ</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹18,800.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>
+
+            <!-- pc 18054tj pro -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#pc-18054tj-pro" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/pc 18054tj pro.png" alt="content">                                                 
+                </div>
+              </a>  
+              <div id="pc-18054tj-pro" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/pc 18054tj pro.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">PC 18054TJ Pro</h1>                  
+                              <p class="leading-relaxed">54* Months Warranty<br>
+                                Capacity: 150 Ah<br>
+                                Power charge Pro batteries are designed for Rural and Semi-urban areas as they offer a Value for money proposal with longer life and less maintenance. Short Tubular container offers an economical choice to consumer</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹19,300.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>              
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">PC 18054TJ Pro</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹19,300.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>                        
+
+          </div>
+          </div>
+
+
+          <!-- Eco charge Battery -->
+          <div class="container px-5 py-24 mx-auto">                            
+            <div class="flex flex-wrap w-full mb-10">                
+              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 id="eco-charge-battery" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Eco Charge</h1>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+              </div>            
+            </div>
+            
+          <div class="flex flex-wrap -m-4">  
+              <!-- eco 18000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#eco-18000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/eco 18000.png" alt="content">                                                 
+                  </div>
+                </a>          
+                <div id="eco-18000" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/eco 18000.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ECO  18000</h1>                  
+                                <p class="leading-relaxed">42* Months Warranty | Capacity: 150 Ah 
+                                  <br>
+                                  The High-Performance tall tubular battery with longer Backup time, is made using rugged tubular plates. These batteries require minimum maintenance and can withstand long and frequent power cuts.</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹18,000.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>      
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ECO 18000</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹18,800.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>                                        
+
+          </div>
+          </div>
+
+          <!-- InverGel Battery -->
+          <div class="container px-5 py-24 mx-auto">                            
+            <div class="flex flex-wrap w-full mb-10">                
+              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 id="invergel-battery" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">InverGel</h1>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+              </div>            
+            </div>
+            
+          <div class="flex flex-wrap -m-4">  
+              <!-- igstj 18000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#igstj-18000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/igstj 18000.png" alt="content">                                                 
+                  </div>
+                </a>   
+                <div id="igstj-18000" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/igstj 18000.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">IGSTJ 18000</h1>                  
+                                <p class="leading-relaxed">48* Months Warranty | Capacity: 150 Ah 
+                                  <br>
+                                  "Fit & Forget" class battery from LUMINOUS portfolio, specially made with cutting-edge Gel technology. An Environment-friendly alternative that emits no fumes. It requires zero maintenance and no water top-up. One of the safest batteries in Luminous cadre with Zero spillage risk</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹24,400.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>             
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">IGSTJ 18000</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹24,400.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>                                        
+
+          </div>
+          </div>
+
+          <!-- Ultra Charge Battery -->
+          <div class="container px-5 py-24 mx-auto">                            
+            <div class="flex flex-wrap w-full mb-10">                
+              <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                <h1 id="ultra-charge-battery" class="Categories-heading sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Ultra Charge</h1>
+                <div class="h-1 w-20 bg-blue-500 rounded"></div>
+              </div>            
+            </div>
+            
+          <div class="flex flex-wrap -m-4"> 
+               <!-- uctt 18066 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#uctt-18066" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/BatteryIMG/uctt 18066.png" alt="content">                                                 
+                  </div>
+                </a>          
+                <div id="uctt-18066" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/BatteryIMG/uctt 18066.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">UCTT 18066</h1>                  
+                                <p class="leading-relaxed">Capacity: 150 Ah <br>
+                                  Warranty: 66* Months<br>
+                                  
+                                   
+                                  
+                                  The Ultra charge range of batteries are the most premium batteries from Luminous Cadre. These Tubular Technology batteries come in a rugged aesthetic container. It boasts extra safety and ultimate performance under extreme circumstances. It is designed for longer backup time with fast charging and ultra-low maintenance. </p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹22,200.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>       
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">UCTT 18066</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 2%; font-weight: bolder;">₹22,200.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>                          
+          </div>
+          </div>
+          
+        </section>
+
+
+        <img class="w-full h-full" src="./images/banner5.jpg"/>
+
+        <!-- Combo Section -->
+        <section id="combo-section" class="text-gray-600 body-font">
+          <h1 class="uk-heading-medium uk-heading-line uk-text-center" style="font-family: 'Times New Roman'; font-weight: bolder; padding: 10%; padding-bottom: 3%; padding-top: 3%;"><span>INVERTER-BATTERY COMBO</span></h1>            
+          <div class="container px-5 py-24 mx-auto">                                        
+            
+          <div class="flex flex-wrap -m-4">  
+              <!-- zelio 1100 + rc 18000 + trolley -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#zelio1100-rc18000-trolley" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/zelio 1100 with rc 18000+ trolley.png" alt="content">                                                 
+                  </div>
+                </a> 
+                <div id="zelio1100-rc18000-trolley" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/zelio 1100 with rc 18000+ trolley.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Zelio 1100 with RC 18000 + Trolley</h1>                  
+                                <p class="leading-relaxed"></p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹30,100.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>                
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Zelio 1100 with RC 18000 + Trolley</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹30,100.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>
+
+            <!--  Zolt 1100 with RC 25000 + Trolley -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#Zolt1100-rc25000-trolley" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/zolt 1100 with rc 25000 + trolley.png" alt="content">                                                 
+                </div>
+              </a>    
+              <div id="Zolt1100-rc25000-trolley" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/zolt 1100 with rc 25000 + trolley.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Zolt 1100 with RC 25000 + Trolley</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹34,600.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>             
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Zolt 1100 with RC 25000 + Trolley</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹34,600.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>  
+
+            <!-- iCruze 11000 with RC 18000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#icruze11000-rc18000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/iCruze 11000 with rc 18000.png" alt="content">                                                 
+                </div>
+              </a>      
+              <div id="icruze11000-rc18000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/iCruze 11000 with rc 18000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - iCruze 11000 with RC 18000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹381,990.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>           
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - iCruze 11000 with RC 18000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹381,990.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Zolt 1100 with SC 18060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#zolt1100-sc18060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/zolt 1100 with sc 18060.png" alt="content">                                                 
+                </div>
+              </a>   
+              <div id="zolt1100-sc18060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/zolt 1100 with sc 18060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Zolt 1100 with SC 18060</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹29,700.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>              
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Zolt 1100 with SC 18060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹29,700.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- zelio 1100 with iltt 26060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#zelio1100-iltt26060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/zelio 1100 with iltt 26060.png" alt="content">                                                 
+                </div>
+              </a> 
+              <div id="zelio1100-iltt26060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/zelio 1100 with iltt 26060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Zelio 1100 with ILTT 26060</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹37,800.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>                
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Zelio 1100 with ILTT 26060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹37,800.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Zelio 1100 with LM 18075 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#zelio1100-lm18075" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/zelio 1100 with lm 18075.png" alt="content">                                                 
+                </div>
+              </a>  
+              <div id="zelio1100-lm18075" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/zelio 1100 with lm 18075.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Zelio 1100 with LM 18075</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹36,000.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>              
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Zelio 1100 with LM 18075</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹36,000.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Eco Volt Neo 1050 with RC 18000ST -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#eco1050-rc18000st" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/eco volt neo 1050 with rc 18000st.png" alt="content">                                                 
+                </div>
+              </a>    
+              <div id="eco1050-rc18000st" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/eco volt neo 1050 with rc 18000st.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Eco Volt Neo 1050 with RC 18000ST</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹27,890.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>             
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Eco Volt Neo 1050 with RC 18000ST</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹27,890.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Eco Volt Neo 1550 with ILTT 26060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#eco1550-iltt26060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/eco volt neo 1050 with sc 18060.png" alt="content">                                                 
+                </div>
+              </a>   
+              <div id="eco1550-iltt26060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/eco volt neo 1050 with sc 18060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Eco Volt Neo 1050 with SC 18060</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹29,390.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>             
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Eco Volt Neo 1050 with SC 18060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹29,390.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Eco Volt Neo 1550 with ILTT 26060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#ecovoltneo1550-iltt26060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/eco volt neo 1550 with iltt 26060.png" alt="content">                                                 
+                </div>
+              </a> 
+              <div id="ecovoltneo1550-iltt26060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/eco volt neo 1550 with iltt 26060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Eco Volt Neo 1550 with ILTT 26060</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹42,300.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>                
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Eco Volt Neo 1550 with ILTT 26060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹42,300.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Eco Volt Neo 2300 with RC 18000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#eco2300-rc18000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/eco volt neo 2300 with rc 18000.png" alt="content">                                                 
+                </div>
+              </a>
+              <div id="eco2300-rc18000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/eco volt neo 2300 with rc 18000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Eco Volt Neo 2300 with RC 18000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹56,300.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>                
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Eco Volt Neo 2300 with RC 18000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹56,300.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Hercules 1500 with RC 25000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#hercules1500-rc25000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/hercules 1500 with rc 25000.png" alt="content">                                                 
+                </div>
+              </a>      
+              <div id="hercules1500-rc25000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/hercules 1500 with rc 25000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Hercules 1500 with RC 25000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹34,390.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>           
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Hercules 1500 with RC 25000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹34,390.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Optimus 1250 with RC 28060 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#optimus1250-rc28060" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/optimus 1250 with rc 28060.png" alt="content">                                                 
+                </div>
+              </a>  
+              <div id="optimus1250-rc28060" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/optimus 1250 with rc 28060.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Optimus 1250 with RC 28060</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹41,300.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>               
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Optimus 1250 with RC 28060</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹41,300.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Optimus 2300 with RC 18000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#optimus2300-rc18000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/optimus 2300 with rc 18000.png" alt="content">                                                 
+                </div>
+              </a>         
+              <div id="optimus2300-rc18000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/optimus 2300 with rc 18000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Optimus 2300 with RC 18000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹56,800.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>       
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Optimus 2300 with RC 18000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹56,800.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Optimus 2300 with RC 25000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#optimus2300-rc25000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/optimus 2300 with rc 25000.png" alt="content">                                                 
+                </div>
+              </a>               
+              <div id="optimus2300-rc25000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/optimus 2300 with rc 25000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Optimus 2300 with RC 25000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹65,800.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div> 
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Optimus 2300 with RC 25000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹65,800.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Optimus 3800 with RC 18000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#optimus3800-rc18000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/optimus 3800 with rc 18000.png" alt="content">                                                 
+                </div>
+              </a>    
+              <div id="optimus3800-rc18000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/optimus 3800 with rc 18000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Optimus 3800 with RC 18000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹90,190.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>             
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Optimus 3800 with RC 18000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹90,190.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+            
+            <!-- Combo - Powersine 1100 with RC 18000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#powersine1100-rc18000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/powersine 1100 with rc 18000.png" alt="content">                                                 
+                </div>
+              </a>                
+              <div id="powersine1100-rc18000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/powersine 1100 with rc 18000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Powersine 1100 with RC 18000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹28,090.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div> 
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Powersine 1100 with RC 18000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹28,090.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+            <!-- Combo - Zelio 1100 with RC 25000 -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#zelio1100-rc25000" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/combosIMG/zelio 1100 with rc 25000.png" alt="content">                                                 
+                </div>
+              </a> 
+              <div id="zelio1100-rc25000" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/combosIMG/zelio 1100 with rc 25000.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">Combo - Zelio 1100 with RC 25000</h1>                                                
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹32,900.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>                
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">Combo - Zelio 1100 with RC 25000</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹32,900.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>
+
+          </div>
+          </div>
+          
+        </section>
+
+        <img class="w-full h-full" src="./images/banner1.jpg"/>
+
+        <!-- Accessories Section -->
+        <section id="accessories-section" class="text-gray-600 body-font">
+          <h1 class="uk-heading-medium uk-heading-line uk-text-center" style="font-family: 'Times New Roman'; font-weight: bolder; padding: 10%; padding-bottom: 3%; padding-top: 3%;"><span>ACCESSORIES</span></h1>            
+          <div class="container px-5 py-24 mx-auto">                                        
+            
+          <div class="flex flex-wrap -m-4">  
+              <!-- ToughX Trolley TX100L -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+                <a href="#txt100l" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                  <div class="uk-transition-toggle" tableindex="0">
+                    <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/accessoriesIMG/toughx trolley tx100l.png" alt="content">                                                 
+                  </div>
+                </a>  
+                <div id="txt100l" class="uk-modal-container" uk-modal>
+                  <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                  <button class="uk-modal-close-default" type="button" uk-close></button>        
+                      <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                          <div class="container px-5 py-24 mx-auto">
+                            <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                              <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/accessoriesIMG/toughx trolley tx100l.png" style="background-color: wheat">
+                              <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                                <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                                <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ToughX Trolley TX100L</h1>                  
+                                <p class="leading-relaxed">ToughX trolley TX100L is an elegantly designed product, which is sturdy as a rock and yet pleasing to the eye. It surely is the very best accessory for your Luminous UPS set.</p>                  
+                                <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                                <div class="flex">
+                                  <span class="title-font font-medium text-2xl text-white">₹1,700.00</span>
+                                  <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                                </div>
+                                <p class="mt-1">(Inclusive of all taxes)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                  </div>
+                  </div>               
+                <div class="mt-4">                    
+                  <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ToughX Trolley TX100L</h2>                    
+                  <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                    <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹1,700.00</h2>
+                    <p class="mt-1">(Inclusive of all taxes)</p>
+                  </div>                  
+                </div>                                     
+            </div>
+
+            <!-- ToughX Trolley TX200L -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#txt200l" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/accessoriesIMG/toughx trolley tx200l.png" alt="content">                                                 
+                </div>
+              </a>    
+              <div id="txt200l" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/accessoriesIMG/toughx trolley tx200l.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ToughX Trolley TX200L</h1>                  
+                              <p class="leading-relaxed">ToughX trolley TX200L is an elegantly designed product, which is sturdy as a rock and yet pleasing to the eye. It surely is the very best accessory for your Luminous UPS set.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹2,100.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>             
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ToughX Trolley TX200L</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹2,100.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>  
+
+            <!-- ToughX Trolley TX100T -->
+            <div class="lg:w-1/4 md:w-1/2 p-4 w-full">                            
+              <a href="#txt100t" uk-toggle class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg overflow-hidden">
+                <div class="uk-transition-toggle" tableindex="0">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6 uk-transition-scale-up uk-transition-opaque" src="./images/accessoriesIMG/toughx trolley tx100t.png" alt="content">                                                 
+                </div>
+              </a>        
+              <div id="txt100t" class="uk-modal-container" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body" style="padding: 0%;">
+                <button class="uk-modal-close-default" type="button" uk-close></button>        
+                    <section class="text-gray-400 bg-gray-900 body-font overflow-hidden">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                            <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="./images/accessoriesIMG/toughx trolley tx100t.png" style="background-color: wheat">
+                            <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                              <h2 class="text-sm title-font text-gray-500 tracking-widest">LUMINOUS</h2>
+                              <h1 class="text-white text-3xl title-font font-medium mb-1" style="padding-bottom: 5%;">ToughX Trolley TX100T</h1>                  
+                              <p class="leading-relaxed">ToughX trolley TX100T is an elegantly designed product, which is sturdy as a rock and yet pleasing to the eye. It surely is the very best accessory for your Luminous UPS set.</p>                  
+                              <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-800 mb-5"></div>
+                              <div class="flex">
+                                <span class="title-font font-medium text-2xl text-white">₹2,000.00</span>
+                                <button class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded">Buy</button>                    
+                              </div>
+                              <p class="mt-1">(Inclusive of all taxes)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+                </div>
+                </div>         
+              <div class="mt-4">                    
+                <h2 class="text-gray-900 title-font text-lg font-medium" style="text-align: center; font-weight: bolder;">ToughX Trolley TX100T</h2>                    
+                <div class="container" style="font-size: smaller; display: flex; justify-content: center; align-items: center;">
+                  <h2 class="text-gray-900 text-lg " style="text-align: center; padding-right: 2%; padding-top: 4%; font-weight: bolder;">₹2,000.00</h2>
+                  <p class="mt-1">(Inclusive of all taxes)</p>
+                </div>                
+              </div>                                     
+            </div>            
+          
+        </section>
+
+
+        <!-- back-to-top -->
+        <div id="backToTopContainer" style="float: right; position: fixed; bottom:40px; right:40px; background-color: gray; color: aliceblue;">
+          <a class="uk-button uk-button-default" href="#" uk-scroll style="font-weight: bolder;">Back to Top</a>
+        </div>
+
+
+        <footer class="text-gray-400 bg-gray-900 body-font">      
+          <div class="container px-5 py-24 mx-auto grid gap-8 justify-center md:grid-cols-2 lg:grid-cols-4" style="padding-left: 6%; padding-bottom: 1%;">
+            <div class="px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ABOUT US</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#about-us" uk-scroll>About AmpedUp</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html">Products</a>
+                </li>            
+              </nav>
+            </div>  
+            <div class="px-4">          
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">QUICK LINKS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="inverter.html">Inverters</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="battery.html">Batteries</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#combo-section">Inverter-Battery combo</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#accessories-section">Accessories</a>
+                </li>
+              </nav>
+            </div>
+            <div class="px-4">          
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">INVERTERS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#eco-watt-neo-inverter">Eco Watt Neo</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#shakti-charge-inverter">Shakti Charge</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#eco-volt-neo-inverter">Eco Volt Neo</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#zelio-inverter">Zelio Series</a>
+                </li>
+              </nav>
+            </div>
+            <div class="px-4">          
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">BATTERIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#inverlast-battery">Inverlast</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#red-charge-battery">Red Charge</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#power-charge-battery">Power Charge</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#eco-charge-battery">Eco Charge</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+          
+    
+    
+    
+    
+    
+    
+          <div class="bg-gray-800 bg-opacity-75">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+              <a href="index.html"><img src="./images/companylogo-bgremoved.png" width="111px" height="34" uk-svg/></a>
+              <p class="text-gray-400 text-sm text-center sm:text-left" style="padding-left: 1%; padding-top: 1%;"> ©2023 </p>                      
+              <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto" style="padding-top: 1%;">
+                <a class="text-gray-400">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </footer>
+
+
+    </body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AmpedUp Supplies</title>        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Borel&family=Caveat&family=Noto+Serif+Vithkuqi:wght@500&family=Pacifico&family=Sacramento&family=Saira+Condensed&family=Sarpanch&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital,wght@1,300&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script> 
+        <script src="uikit/dist/js/uikit-icons.min.js"></script>  
+        <script>          
+          function toggleBackToTop() {
+            const backToTopContainer = document.getElementById('backToTopContainer');
+            if (window.scrollY > 400) {
+              backToTopContainer.style.display = 'block';
+            } else {
+              backToTopContainer.style.display = 'none';
+            }
+          }
+      
+          window.addEventListener('scroll', toggleBackToTop);
+          document.addEventListener('DOMContentLoaded', toggleBackToTop);
+        </script>
+
+
+        <style>  
+          .text-gray-600 a{
+            text-decoration: none;
+            color: inherit;
+          } 
+          
+          .heading-top{
+            background-color:#096192;
+            color:whitesmoke
+          }
+
+          .text-gray-600 h2{
+            font-family: 'Noto Serif Vithkuqi', serif;
+            color: darkslategrey;
+          }
+
+          .receiver-icon{
+            display: block;
+            margin-left: 5px;
+          }
+
+          .comp-logo{
+            height: auto;
+            width: 150px;            
+          }
+          .customer-support-nav{
+            font-family: 'Noto Serif Vithkuqi', serif;
+          }
+          .mr-5{
+            font-family: 'Noto Serif Vithkuqi', serif;          
+          }
+          .Categories-heading{
+            font-family: 'Noto Serif Vithkuqi', serif;          
+          }
+          
+          .uk-card-small{
+            margin-bottom: auto;
+          }
+
+          .uk-card{
+            margin: auto;
+          }  
+          
+          .uk-heading-active{
+            font-size: large;
+            font-weight: 500;            
+          }
+
+          .sliding-menu{
+            background: #1399c6;
+          }
+
+          .uk-heading-medium{
+            margin-top: 1%;
+            margin-bottom: 0%;
+            font-family: 'Dancing Script', cursive;
+          }
+
+   
+          .list-none{
+            line-height: 35px;
+          }
+
+          #contact-heading{
+            font-family: 'Times New Roman';
+            text-align: center;          
+          }
+
+        </style>     
+    </head>
+
+    <body>      
+      <header class="text-gray-600 body-font uk-card uk-card-default heading-top" uk-sticky>            
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href="index.html">
+            <img class="comp-logo" src="./images/companylogo-bgremoved.png"/>
+          </a>
+          <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center" style="padding-right: 7%;">                                
+            <a class="mr-5 hover:text-gray-900">Browse<span uk-drop-parent-icon></span></a>
+            <div uk-dropdown="animation: uk-animation-slide-top-small; animate-out: true">
+              <ul class="uk-nav uk-dropdown-nav">    
+                  <li class="uk-nav-header"><a href="./products.html">ALL PRODUCTS</a></li>                  
+                  <li><a href="inverter.html">Inverter</a></li>
+                  <li><a href="battery.html">Battery</a></li>
+                  <li><a href="products.html#accessories-section">Accessories</a></li>
+                  <li class="uk-nav-header">Special Combos</li>
+                  <li><a href="products.html#combo-section">Inverter and Battery Combo</a></li>                      
+              </ul>
+            </div>
+            <a class="mr-5 hover:text-gray-900">Products<span uk-drop-parent-icon></span></a>                
+              <div class="uk-width-large" uk-dropdown>
+                  <div class="uk-drop-grid uk-child-width-1-2@m" uk-grid>
+                      <div>
+                          <ul class="uk-nav uk-dropdown-nav">
+                              <li class="uk-heading-active"><a href="inverter.html" class="uk-text-emphasis">Inverter and UPS</a></li>
+                              <li><a href="products.html#eco-watt-neo-inverter">Eco Watt NEO</a></li>
+                              <li><a href="products.html#shakti-charge-inverter">Shakti Charge Inverters</a></li>
+                              <li><a href="products.html#eco-volt-neo-inverter">Eco Volt NEO</a></li>
+                              <li><a href="products.html#zelio-inverter">Zelio Series</a></li>
+                              <li><a href="products.html#optimus-inverter">Optimus Series</a></li>
+                              <li><a href="products.html#power-sine-inverter">Power Sine 800</a></li>
+                              <li><a href="products.html#zolt-inverter">Zolt 1100</a></li>
+                              <li class="uk-heading-active"><a href="battery.html" class="uk-text-emphasis">Battery</a></li>
+                              <li><a href="products.html#inverlast-battery">Inverlast</a></li>
+                              <li><a href="products.html#red-charge-battery">Red Charge</a></li> 
+                              <li><a href="products.html#power-charge-battery">Power Charge</a></li> 
+                              <li><a href="products.html#eco-charge-battery">Eco Charge</a></li> 
+                              <li><a href="products.html#invergel-battery">InverGel</a></li>  
+                              <li><a href="products.html#ultra-charge-battery">Utra Charge</a></li>                           
+                          </ul>
+                      </div>
+                      <div>
+                          <ul class="uk-nav uk-dropdown-nav">
+                              <li class="uk-heading-active"><a href="products.html#combo-section" class="uk-text-emphasis">Inverter and Battery Combo</a></li>
+                              <li><a href="products.html#combo-section">Zelio 1100 with RC 18000 + Trolley</a></li>
+                              <li><a href="products.html#combo-section">Zolt 1100 with RC 25000 + Trolley</a></li>
+                              <li><a href="products.html#combo-section">iCruze 11000 with RC 18000</a></li>
+                              <li><a href="products.html#combo-section">Zolt 1100 with SC 18060</a></li>
+                              <li><a href="products.html#combo-section">Zelio 1100 with ILTT 26060</a></li>
+                              <li><a href="products.html#combo-section">Zelio 1100 with LM 18075</a></li>
+                              <li><a href="products.html#combo-section">+ MORE</a></li>
+                              <li class="uk-heading-active"><a href="products.html#accessories-section" class="uk-text-emphasis">Accessories</a></li>
+                              <li><a href="products.html#accessories-section">ToughX Trolley TX100L</a></li>
+                              <li><a href="products.html#accessories-section">ToughX Trolley TX200L</a></li>
+                              <li><a href="products.html#accessories-section">ToughX Trolley TX100T</a></li>                                  
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+
+
+            
+              <a class="mr-5 hover:text-gray-900" href="#about-us" uk-scroll>About Us</a>
+              <a class="mr-5 hover:text-gray-900" uk-toggle="target: #modal-close-outside">Installation</a>
+              <div id="modal-close-outside" uk-modal>
+                <div class="uk-modal-dialog uk-modal-body">
+                    <button class="uk-modal-close-outside" type="button" uk-close></button>
+                    <h2 class="uk-modal-title">Installation</h2><br>
+                    <p style="display: flex; align-items: center;">
+                        For Installation Please Contact us at <a class="receiver-icon" uk-icon="icon: receiver"></a> +91 92111132444                                
+                    </p>
+                    
+                </div>
+            </div>
+          </nav>
+          <a class="receiver-icon" href="#" uk-icon="icon: home" style="padding-right: 8px;"></a>
+          <a class="customer-support-nav" href="index.html">Home</a>
+          
+        </div>
+      </header> 
+
+
+
+          <section class="text-gray-600 body-font" style="background-color: lightblue;">
+            <div class="container px-5 py-24 mx-auto">
+                <nav aria-label="Breadcrumb">
+                    <ul class="uk-breadcrumb">
+                        <li><a href="index.html" class="uk-text-large" style="font-style: italic;">Home</a></li>                                                
+                        <li><span class="uk-text-large" style="font-style: italic;">Inverters And UPS</span></li>
+                    </ul>
+                </nav>
+
+
+              <div class="flex flex-col" style="padding-top: 2%;">
+                <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                  <div class="w-24 h-full bg-blue-500"></div>
+                </div>
+                <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                  <h1 class="uk-heading-small" style="font-family: 'Courier New', Courier, monospace; font-style: italic;">INVERTERS AND UPS</h1>                  
+                </div>
+              </div>
+              
+        <div class="flex flex-wrap -m-4">
+          <!-- eco watt neo -->
+            <div class="lg:w-1/3 md:w-1/2 p-4 w-full">   
+              <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg uk-transition-toggle" tabindex="0">
+                <a href="products.html#eco-watt-neo-inverter">
+                <div class="rounded-lg h-64 overflow-hidden uk-transition-scale-up uk-transition-opaque">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="./images/inverter and ups IMG/Eco watt neo 700.png">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Eco Watt NEO</h2>
+                <p class="text-base leading-relaxed mt-2 uk-text-meta">Eco Watt Neo series with Intelligent Square Wave technology is a best seller from the house of Luminous. It is suitable for Home, Office and Small commercial applications. </p>                  
+                </a>
+              </div> 
+            </div>
+               
+            <!-- eco volt neo -->
+            <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+            <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg uk-transition-toggle" tabindex="0">
+                <a href="products.html#eco-volt-neo-inverter">
+                    <div class="rounded-lg h-64 overflow-hidden uk-transition-scale-up uk-transition-opaque">
+                        <img alt="content" class="object-cover object-center h-full w-full" src="./images/inverter and ups IMG/eco volt neo 750.png">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Eco Volt NEO</h2>
+                    <p class="text-base leading-relaxed mt-2 uk-text-meta">Eco Volt Neo series with pure sine wave technology is a best seller from the house of Luminous. Low harmonic distortion makes it practically noiseless.</p>                
+                </a>
+            </div> 
+          </div>
+
+          <!-- shakti charge -->
+          <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+            <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg uk-transition-toggle" tabindex="0">
+                <a href="products.html#shakti-charge-inverter">
+                    <div class="rounded-lg h-64 overflow-hidden uk-transition-scale-up uk-transition-opaque">
+                        <img alt="content" class="object-cover object-center h-full w-full" src="./images/inverter and ups IMG/shakti charge 1150.png">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Shakti Charge Inverters</h2>
+                    <p class="text-base leading-relaxed mt-2 uk-text-meta">Shakti Charge is India's most trusted inverter series for rural and semi–urban areas with in-built heavy-duty charger and LVFC (Low voltage fast battery charging) technology.</p>                  
+                </a>
+            </div>  
+          </div>   
+              
+            
+              <!-- zelio -->
+              <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg uk-transition-toggle" tabindex="0">
+                    <a href="products.html#zelio-inverter">
+                    <div class="rounded-lg h-64 overflow-hidden uk-transition-scale-up uk-transition-opaque">
+                        <img alt="content" class="object-cover object-center h-full w-full" src="./images/inverter and ups IMG/zelio+ 1100.png">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Zelio Series</h2>
+                    <p class="text-base leading-relaxed mt-2 uk-text-meta">Zelio is India’s most intelligent and advanced inverter series equipped with 32-bit DSP processor and informative LCD display with features such as power back-up time display and much more. </p>                  
+                    </a>
+                </div> 
+              </div>
+               
+              <!-- optimus -->
+              <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg uk-transition-toggle" tabindex="0">
+                    <a href="products.html#optimus-inverter">
+                        <div class="rounded-lg h-64 overflow-hidden uk-transition-scale-up uk-transition-opaque">
+                            <img alt="content" class="object-cover object-center h-full w-full" src="./images/inverter and ups IMG/optimus 2300+.png">
+                        </div>
+                        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Optimus Series</h2>
+                        <p class="text-base leading-relaxed mt-2 uk-text-meta">Optimus series is a micro-controller based, advanced pure sine wave inverter series, equipped with mains by pass switch and battery charging current setting.</p><br>                  
+                    </a>
+                </div> 
+              </div>
+    
+              <!-- power sine -->
+              <div class="lg:w-1/3 md:w-1/2 p-4 w-full">
+                <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg uk-transition-toggle" tabindex="0">
+                    <a href="products.html#power-sine-inverter">
+                        <div class="rounded-lg h-64 overflow-hidden uk-transition-scale-up uk-transition-opaque">
+                            <img alt="content" class="object-cover object-center h-full w-full" src="./images/inverter and ups IMG/power sine 800.png">
+                        </div>
+                        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Power Sine</h2>
+                        <p class="text-base leading-relaxed mt-2 uk-text-meta">Power Sine 800 is Pure sine wave inverter series of Luminous with advanced microprocessor based design, LVFC (Low voltage fast battery charging) technology and user friendly LED indications.</p>                  
+                    </a>
+                </div>  
+              </div>
+
+              <!-- zolt -->
+              <div class="lg:w-1/3 md:w-1/2 p-4 w-full">                 
+                <div class="uk-card uk-card-small uk-card-default uk-card-hover uk-card-body rounded-lg uk-transition-toggle" tabindex="0">
+                    <a href="products.html#zolt-inverter">
+                    <div class="rounded-lg h-64 overflow-hidden uk-transition-scale-up uk-transition-opaque">
+                        <img alt="content" class="object-cover object-center h-full w-full" src="./images/inverter and ups IMG/zolt 1100.png">
+                    </div>
+                    <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Zolt</h2>
+                    <p class="text-base leading-relaxed mt-2 uk-text-meta">Zolt series is advanced inverter series with 32 bit DSP processor and informative LCD display with features such as Power back up time display, fault indicators and much more.</p>                  
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+
+
+
+
+          <div id="about-us" class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex" style="background-image: url('images/lamp.jpg');">
+            <div class="uk-width-1-2@m uk-text-center uk-margin-auto uk-margin-auto-vertical">
+                <h1 style="color: aliceblue; font-family: Georgia;" class="uk-heading-medium" uk-parallax="opacity: 0,1,1; y: -100,0,0; x: 100,100,0; scale: 2,1,1; end: 50vh + 50%;">Who are We?</h1>
+                <p style="color: aliceblue; font-size: x-large; font-family: Georgia;" uk-parallax="opacity: 0,1,1; y: 100,0,0; x: -100,-100,0; scale: 0.5,1,1; end: 50vh + 50%;">We are your authorized Luminous Products seller, bringing you cutting-edge power and energy storage solutions. With a commitment to innovation, quality, and customer satisfaction, we empower lives through reliable and sustainable products. Choose us for an unparalleled experience in power backup and energy efficiency.</p>
+            </div>
+        </div>
+
+
+
+        <footer class="text-gray-400 bg-gray-900 body-font">      
+          <div class="container px-5 py-24 mx-auto grid gap-8 justify-center md:grid-cols-2 lg:grid-cols-4" style="padding-left: 6%; padding-bottom: 1%;">
+            <div class="px-4">
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">ABOUT US</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="#about-us" uk-scroll>About AmpedUp</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html">Products</a>
+                </li>            
+              </nav>
+            </div>  
+            <div class="px-4">          
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">QUICK LINKS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="inverter.html">Inverters</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="battery.html">Batteries</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#combo-section">Inverter-Battery combo</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#accessories-section">Accessories</a>
+                </li>
+              </nav>
+            </div>
+            <div class="px-4">          
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">INVERTERS</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#eco-watt-neo-inverter">Eco Watt Neo</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#shakti-charge-inverter">Shakti Charge</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#eco-volt-neo-inverter">Eco Volt Neo</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#zelio-inverter">Zelio Series</a>
+                </li>
+              </nav>
+            </div>
+            <div class="px-4">          
+              <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">BATTERIES</h2>
+              <nav class="list-none mb-10">
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#inverlast-battery">Inverlast</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#red-charge-battery">Red Charge</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#power-charge-battery">Power Charge</a>
+                </li>
+                <li>
+                  <a class="text-gray-400 hover:text-white" href="products.html#eco-charge-battery">Eco Charge</a>
+                </li>
+              </nav>
+            </div>
+          </div>
+          
+    
+    
+    
+    
+    
+    
+          <div class="bg-gray-800 bg-opacity-75">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+              <a href="index.html"><img src="./images/companylogo-bgremoved.png" width="111px" height="34" uk-svg/></a>
+              <p class="text-gray-400 text-sm text-center sm:text-left" style="padding-left: 1%; padding-top: 1%;"> ©2023 </p>                      
+              <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto" style="padding-top: 1%;">
+                <a class="text-gray-400">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a class="ml-3 text-gray-400">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </div>
+        </footer>
+
+
+    </body>
+</html>
