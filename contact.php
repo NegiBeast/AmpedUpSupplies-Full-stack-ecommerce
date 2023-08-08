@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect('localhost', 'id21058491_customer_support', 'Aashishnegi@24', 'id21058491_ampedupsupplies');
+$con = mysqli_connect('host', 'user_id', 'pass', 'db_name');
 
 $Name = $_POST['txtName'];
 $Phone = $_POST['txtPhone'];
