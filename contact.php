@@ -1,6 +1,6 @@
 <?php
 
-$con = mysqli_connect('host', 'user_id', 'pass', 'db_name');
+$con = mysqli_connect('host', 'username', 'password', 'db_name');
 
 $Name = $_POST['txtName'];
 $Phone = $_POST['txtPhone'];
